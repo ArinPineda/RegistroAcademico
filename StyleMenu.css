@@ -1,0 +1,38 @@
+
+body{
+    width: 500px;
+    margin: 0 auto;
+}
+
+#imagenKonrad{
+    height: 120;
+    width: 200;
+}
+
+p{
+    font: arial;
+    background: #1E5E1E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+table{
+    color: black;
+}
+#textServiceAcademics{
+
+background-color: #1E5E1E;
+background-size: 15px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+#botonesAceptarLimpiar{
+  align-content: center;
+margin: 100px auto;    
+}
+#textNoticiasEstudiantes{
+margin: 30px auto;
+}

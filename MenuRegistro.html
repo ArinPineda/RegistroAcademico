@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+
+    <LINK REL=StyleSheet HREF="StyleMenu.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        Servicios académicos
+    </title>
+</header>
+
+<body>
+    <center>
+        <img id="imagenKonrad" src="http://registro.fukl.edu:8080/ServacadKL/img/escudoNew.JPG" alt="Konrad_Lorenz"
+            height="120" width="500">
+
+         <h2 id="textInvisible" style="visibility: hidden">
+            Falta alguno de los campos
+
+        </h2>
+
+        <p id="textServiceAcademics">
+            Servicios academicos a Estudiantes
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Codigo:
+                </th>
+                <th>
+                    <div align="center">
+                        <input id="inputCodigo" ,style="size: 10" , maxlength="10">
+                        </input>
+                    </div>
+
+                </th>
+            </tr>
+            <th>
+                Contraseña:
+            </th>
+            <th>
+                <input id="inputPassword">
+                </input>
+            </th>
+            <tr>
+
+            </tr>
+
+            <tr id="botonesAceptarLimpiar">
+
+                <td>
+                    <button id="aceptar">
+                        Aceptar
+
+                    </button>
+
+                </td>
+                <td>
+                    <div align="center">
+                        <button id="limpiar">
+                            Limpiar
+                        </button>
+
+                    </div>
+
+                </td>
+            </tr>
+
+
+        </table>
+
+
+        <br>
+        <a href=" http://registro.fukl.edu:8080/ServacadKL/HorarioAsignatura">
+            Consultar Horario de Asignaturas
+        </a>
+        </br>
+
+
+
+        <p>
+            Consulta de Dia de registro
+        </p>
+        <table>
+            <tr>
+                <th>
+                    Codigo:
+                </th>
+                <th>
+                    <input type="codigo" name="codigo" syze="12">
+                </th>
+            </tr>
+
+
+
+
+
+
+        </table>
+        <br>
+        <button>
+            Consultar Dia de Operaciones de Registro
+        </button>
+        </br>
+
+
+
+        <p id="textNoticiasEstudiantes">
+            NOTICIAS ESTUDIANTES
+        </p>
+
+
+
+
+    </center>
+
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+    var btnAcceptar = document.getElementById("aceptar");
+    var btnLimpiar = document.getElementById("limpiar");
+    var inputPassword = document.getElementById("inputPassword");
+    var inputCodigo = document.getElementById("inputCodigo");
+    var textInvisible = document.getElementById("textInvisible");
+    function CleanForm() {
+        inputCodigo.value = "";
+        inputPassword.value = "";
+    }
+    function OnAcceptPressed(){
+         if(inputCodigo.value == "" || inputPassword.value == ""){
+           textInvisible.style.visibility = "visible";
+         }
+    }
+
+    btnLimpiar.onclick = function () { CleanForm() }
+    btnAcceptar.onclick = function() {OnAcceptPressed()}
+
+</script>
+
+</html>
